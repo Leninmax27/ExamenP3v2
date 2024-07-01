@@ -1,0 +1,11 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenP3v2.Views.JokesPage">
+    <ListView ItemsSource="{Binding Jokes}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding JokeText}" Detail="{Binding Code}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
